@@ -1,3 +1,10 @@
+---
+title: Teachable AI Coding
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Teachable AI Coding Personality Lab
 
 一个可运行的编程教育实验原型，用大五人格框架设定“可教 AI 学生”。学生负责教 AI 用 C++ 解编程题，系统记录互动日志，用于分析人格条件对解释、测试、调试和学习互动的影响。

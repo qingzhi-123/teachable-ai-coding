@@ -1,0 +1,7 @@
+.git
+.env
+__pycache__/
+tests/__pycache__/
+data/
+*.log
+package-lock.json
