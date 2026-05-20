@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: teachable-ai-coding
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py --host 0.0.0.0"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        sync: false
+      - key: OPENAI_BASE_URL
+        value: https://api.openai.com/v1

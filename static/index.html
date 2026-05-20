@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>可教 AI 编程人格实验</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace">
+        <aside class="control-panel">
+          <div class="brand">
+            <div class="brand-mark">AI</div>
+            <div>
+              <h1>可教 AI 编程人格实验</h1>
+              <p>让学生通过教会 AI 解题来学习 C++。</p>
+            </div>
+          </div>
+
+          <label class="field">
+            <span>学生编号</span>
+            <input id="participantId" value="student-001" />
+          </label>
+
+          <label class="field">
+            <span>智能体人格</span>
+            <select id="personalitySelect"></select>
+          </label>
+
+          <label class="field">
+            <span>编程题</span>
+            <select id="taskSelect"></select>
+          </label>
+
+          <button id="startButton" class="primary-button">开始实验</button>
+
+          <div id="personalityInfo" class="info-block"></div>
+          <div id="taskInfo" class="task-card"></div>
+        </aside>
+
+        <section class="chat-panel">
+          <div class="chat-header">
+            <div>
+              <h2 id="chatTitle">请选择条件并开始</h2>
+              <p id="chatSubtitle">AI 会扮演需要你教学的编程学生。</p>
+            </div>
+            <button id="logButton" class="ghost-button">查看最近日志</button>
+          </div>
+
+          <div id="messages" class="messages"></div>
+
+          <form id="messageForm" class="composer">
+            <textarea
+              id="studentMessage"
+              rows="5"
+              placeholder="像老师一样解释 C++ 思路、代码、例子、边界情况或测试用例..."
+            ></textarea>
+            <button type="submit" class="send-button">发送</button>
+          </form>
+        </section>
+      </section>
+
+      <dialog id="logDialog">
+        <div class="dialog-header">
+          <h3>最近实验日志</h3>
+          <button id="closeLogButton" class="ghost-button">关闭</button>
+        </div>
+        <pre id="logContent"></pre>
+      </dialog>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

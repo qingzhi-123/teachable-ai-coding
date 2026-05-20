@@ -1,0 +1,7 @@
+.env
+data/interactions.jsonl
+data/server-error.log
+*.log
+package-lock.json
+__pycache__/
+tests/__pycache__/
